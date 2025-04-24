@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجم | الرئيسية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="date-time">
+                            <span id="current-date"></span> | <span id="current-time"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="auth-buttons">
+                            <button class="btn login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">تسجيل الدخول</button>
+                            <button class="btn register-btn" data-bs-toggle="modal" data-bs-target="#registerModal">إنشاء حساب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1><span class="logo-star">★</span> نجم</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="search-bar">
+                            <form id="search-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="search-input" placeholder="ابحث عن الأخبار...">
+                                    <button class="btn search-btn" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/politics.html">سياسة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/economy.html">اقتصاد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sports.html">رياضة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/culture.html">ثقافة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/special-reports.html">تقارير خاصة</a>
+                        </li>
+                    </ul>
+                    <div class="notifications-icon ms-auto">
+                        <button class="btn" id="notifications-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                        <div class="notifications-dropdown">
+                            <div class="notification-item">
+                                <h5>خبر عاجل</h5>
+                                <p>تطورات جديدة في الأزمة الاقتصادية العالمية</p>
+                            </div>
+                            <div class="notification-item">
+                                <h5>رياضة</h5>
+                                <p>نتائج مباريات اليوم في الدوري المحلي</p>
+                            </div>
+                            <div class="notification-item">
+                                <h5>تقرير خاص</h5>
+                                <p>تقرير حول التغيرات المناخية وتأثيرها على المنطقة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Breaking News Bar -->
+        <div class="breaking-news-container">
+            <div class="container">
+                <div class="breaking-news">
+                    <div class="breaking-label">
+                        <span>عاجل</span>
+                    </div>
+                    <div class="breaking-news-ticker">
+                        <ul id="breaking-news-list">
+                            <li>تطورات جديدة في المحادثات الدبلوماسية بين القوى العالمية</li>
+                            <li>ارتفاع مؤشرات البورصة المحلية بنسبة 3% في ختام جلسة اليوم</li>
+                            <li>الفريق الوطني يتأهل للدور النهائي بعد فوز ساحق في المباراة الأخيرة</li>
+                            <li>إطلاق مبادرة وطنية جديدة لدعم الثقافة والفنون في البلاد</li>
+                            <li>افتتاح معرض دولي للتكنولوجيا بمشاركة شركات عالمية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured News Section -->
+        <section class="featured-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="main-featured-news">
+                            <div class="featured-image">
+                                <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg" alt="اجتماع قمة">
+                                <div class="featured-category">سياسة</div>
+                            </div>
+                            <div class="featured-content">
+                                <h2>اجتماع قمة دولي لمناقشة التحديات الاقتصادية العالمية</h2>
+                                <p>بدأت اليوم أعمال القمة الدولية لمناقشة التحديات الاقتصادية العالمية بمشاركة قادة أكثر من 20 دولة. تهدف القمة إلى وضع استراتيجيات مشتركة لمواجهة الأزمات الاقتصادية الحالية...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> قبل ساعتين</span>
+                                    <span><i class="far fa-comment"></i> 15 تعليق</span>
+                                    <span><i class="far fa-eye"></i> 1.2K مشاهدة</span>
+                                </div>
+                                <a href="#" class="read-more">اقرأ المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sub-featured-news">
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <img src="https://images.pexels.com/photos/7821857/pexels-photo-7821857.jpeg" alt="أخبار الاقتصاد">
+                                    <div class="news-category">اقتصاد</div>
+                                </div>
+                                <div class="news-content">
+                                    <h3>ارتفاع أسعار النفط بنسبة 5% مع تزايد الطلب العالمي</h3>
+                                    <div class="article-meta">
+                                        <span><i class="far fa-clock"></i> قبل 4 ساعات</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-image">
+                                    <img src="https://images.pexels.com/photos/3628912/pexels-photo-3628912.jpeg" alt="أخبار الرياضة">
+                                    <div class="news-category">رياضة</div>
+                                </div>
+                                <div class="news-content">
+                                    <h3>المنتخب الوطني يستعد للمشاركة في البطولة القارية القادمة</h3>
+                                    <div class="article-meta">
+                                        <span><i class="far fa-clock"></i> قبل 6 ساعات</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="latest-news">
+            <div class="container">
+                <div class="section-header">
+                    <h2>أحدث الأخبار</h2>
+                    <a href="#" class="view-all">عرض الكل</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg" alt="سياسة">
+                                <div class="news-category">سياسة</div>
+                            </div>
+                            <div class="news-content">
+                                <h3>اتفاقية جديدة لتعزيز التعاون بين البلدان في المنطقة</h3>
+                                <p>تم التوقيع على اتفاقية جديدة لتعزيز التعاون الاقتصادي والأمني بين عدة دول...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> قبل 3 ساعات</span>
+                                    <span><i class="far fa-comment"></i> 8 تعليق</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg" alt="اقتصاد">
+                                <div class="news-category">اقتصاد</div>
+                            </div>
+                            <div class="news-content">
+                                <h3>البنك المركزي يعلن عن تدابير جديدة لدعم الاقتصاد</h3>
+                                <p>أعلن البنك المركزي عن حزمة من التدابير الجديدة لدعم الاقتصاد ومواجهة التحديات الحالية...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> قبل 5 ساعات</span>
+                                    <span><i class="far fa-comment"></i> 12 تعليق</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg" alt="رياضة">
+                                <div class="news-category">رياضة</div>
+                            </div>
+                            <div class="news-content">
+                                <h3>اختتام بطولة كرة القدم المحلية وإعلان الفائز بالكأس</h3>
+                                <p>اختتمت أمس بطولة كرة القدم المحلية بمباراة نهائية مثيرة حسمها الفائز...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> قبل 7 ساعات</span>
+                                    <span><i class="far fa-comment"></i> 23 تعليق</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category News Sections -->
+        <section class="category-news">
+            <div class="container">
+                <!-- Politics News -->
+                <div class="category-section">
+                    <div class="section-header">
+                        <h2>سياسة</h2>
+                        <a href="pages/politics.html" class="view-all">عرض الكل</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="main-category-news">
+                                <div class="news-image">
+                                    <img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg" alt="أخبار سياسية">
+                                </div>
+                                <div class="news-content">
+                                    <h3>زيارة رسمية لوفد دبلوماسي للمباحثات حول القضايا الإقليمية</h3>
+                                    <p>يقوم وفد دبلوماسي رفيع المستوى بزيارة رسمية للتباحث حول القضايا الإقليمية والدولية ذات الاهتمام المشترك وسبل تعزيز العلاقات الثنائية...</p>
+                                    <div class="article-meta">
+                                        <span><i class="far fa-clock"></i> قبل 8 ساعات</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="small-news-card">
+                                        <div class="news-image">
+                                            <img src="https://images.pexels.com/photos/8850618/pexels-photo-8850618.jpeg" alt="أخبار سياسية">
+                                        </div>
+                                        <div class="news-content">
+                                            <h4>المجلس النيابي يناقش مشروع قانون جديد</h4>
+                                            <div class="article-meta">
+                                                <span><i class="far fa-clock"></i> قبل 10 ساعات</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small-news-card">
+                                        <div class="news-image">
+                                            <img src="https://images.pexels.com/photos/1464223/pexels-photo-1464223.jpeg" alt="أخبار سياسية">
+                                        </div>
+                                        <div class="news-content">
+                                            <h4>إعلان نتائج الانتخابات المحلية في المحافظات</h4>
+                                            <div class="article-meta">
+                                                <span><i class="far fa-clock"></i> قبل 12 ساعة</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small-news-card">
+                                        <div class="news-image">
+                                            <img src="https://images.pexels.com/photos/4720069/pexels-photo-4720069.jpeg" alt="أخبار سياسية">
+                                        </div>
+                                        <div class="news-content">
+                                            <h4>انعقاد مؤتمر حول الإصلاح السياسي</h4>
+                                            <div class="article-meta">
+                                                <span><i class="far fa-clock"></i> قبل 14 ساعة</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small-news-card">
+                                        <div class="news-image">
+                                            <img src="https://images.pexels.com/photos/7658352/pexels-photo-7658352.jpeg" alt="أخبار سياسية">
+                                        </div>
+                                        <div class="news-content">
+                                            <h4>تعيينات جديدة في المناصب الحكومية العليا</h4>
+                                            <div class="article-meta">
+                                                <span><i class="far fa-clock"></i> قبل 16 ساعة</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="multimedia-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>وسائط متعددة</h2>
+                    <a href="#" class="view-all">عرض الكل</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="main-video">
+                            <div class="video-container">
+                                <img src="https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg" alt="فيديو رئيسي" class="video-thumbnail">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-content">
+                                <h3>تقرير مصور: التطورات الاقتصادية وتأثيرها على المواطن</h3>
+                                <p>يستعرض هذا التقرير المصور أهم التطورات الاقتصادية الأخيرة وتأثيرها المباشر على حياة المواطن العادي...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> قبل يوم</span>
+                                    <span><i class="far fa-eye"></i> 2.5K مشاهدة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="video-list">
+                            <div class="video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg" alt="فيديو">
+                                    <div class="play-button small">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-item-content">
+                                    <h4>لقاء خاص مع وزير الاقتصاد حول خطط التنمية</h4>
+                                    <span><i class="far fa-clock"></i> قبل يومين</span>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.pexels.com/photos/8731116/pexels-photo-8731116.jpeg" alt="فيديو">
+                                    <div class="play-button small">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-item-content">
+                                    <h4>تغطية شاملة لأحداث البطولة الرياضية الأخيرة</h4>
+                                    <span><i class="far fa-clock"></i> قبل 3 أيام</span>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <div class="video-thumbnail">
+                                    <img src="https://images.pexels.com/photos/8849288/pexels-photo-8849288.jpeg" alt="فيديو">
+                                    <div class="play-button small">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-item-content">
+                                    <h4>جولة في معرض الثقافة والفنون الدولي</h4>
+                                    <span><i class="far fa-clock"></i> قبل 4 أيام</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="newsletter-content">
+                                <h2>اشترك في النشرة الإخبارية</h2>
+                                <p>احصل على آخر الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="newsletter-form">
+                                <form id="newsletter-form">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                                        <button class="btn subscribe-btn" type="submit">اشتراك</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <h2><span class="logo-star">★</span> نجم</h2>
+                            </div>
+                            <p>منصة إخبارية رائدة تقدم أحدث الأخبار والتحليلات في مختلف المجالات السياسية والاقتصادية والرياضية والثقافية.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-links">
+                            <h3>روابط سريعة</h3>
+                            <ul>
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="pages/politics.html">سياسة</a></li>
+                                <li><a href="pages/economy.html">اقتصاد</a></li>
+                                <li><a href="pages/sports.html">رياضة</a></li>
+                                <li><a href="pages/culture.html">ثقافة</a></li>
+                                <li><a href="pages/special-reports.html">تقارير خاصة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <h3>خدماتنا</h3>
+                            <ul>
+                                <li><a href="#">النشرة الإخبارية</a></li>
+                                <li><a href="#">الإشعارات المباشرة</a></li>
+                                <li><a href="#">الوسائط المتعددة</a></li>
+                                <li><a href="#">البث المباشر</a></li>
+                                <li><a href="#">الأرشيف</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-contact">
+                            <h3>اتصل بنا</h3>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> شارع الإعلام، المدينة الإعلامية</li>
+                                <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                                <li><i class="fas fa-envelope"></i> info@najm-news.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 نجم للأخبار. جميع الحقوق محفوظة.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="login-email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="login-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="login-password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label" for="remember-me">تذكرني</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">دخول</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">إنشاء حساب جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label for="register-name" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="register-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="register-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="register-password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-confirm-password" class="form-label">تأكيد كلمة المرور</label>
+                            <input type="password" class="form-control" id="register-confirm-password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree-terms" required>
+                            <label class="form-check-label" for="agree-terms">أوافق على شروط الاستخدام وسياسة الخصوصية</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">تسجيل</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="modal fade" id="searchResultsModal" tabindex="-1" aria-labelledby="searchResultsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchResultsModalLabel">نتائج البحث</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="search-results-container">
+                        <!-- Search results will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/breaking-news.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجم | سياسة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="date-time">
+                            <span id="current-date"></span> | <span id="current-time"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="auth-buttons">
+                            <button class="btn login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">تسجيل الدخول</button>
+                            <button class="btn register-btn" data-bs-toggle="modal" data-bs-target="#registerModal">إنشاء حساب</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <h1><span class="logo-star">★</span> نجم</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="search-bar">
+                            <form id="search-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="search-input" placeholder="ابحث عن الأخبار...">
+                                    <button class="btn search-btn" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="politics.html">سياسة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="economy.html">اقتصاد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sports.html">رياضة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="culture.html">ثقافة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="special-reports.html">تقارير خاصة</a>
+                        </li>
+                    </ul>
+                    <div class="notifications-icon ms-auto">
+                        <button class="btn" id="notifications-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                        <div class="notifications-dropdown">
+                            <div class="notification-item">
+                                <h5>خبر عاجل</h5>
+                                <p>تطورات جديدة في الأزمة الاقتصادية العالمية</p>
+                            </div>
+                            <div class="notification-item">
+                                <h5>رياضة</h5>
+                                <p>نتائج مباريات اليوم في الدوري المحلي</p>
+                            </div>
+                            <div class="notification-item">
+                                <h5>تقرير خاص</h5>
+                                <p>تقرير حول التغيرات المناخية وتأثيرها على المنطقة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Breaking News Bar -->
+        <div class="breaking-news-container">
+            <div class="container">
+                <div class="breaking-news">
+                    <div class="breaking-label">
+                        <span>عاجل</span>
+                    </div>
+                    <div class="breaking-news-ticker">
+                        <ul id="breaking-news-list">
+                            <li>تطورات جديدة في المحادثات الدبلوماسية بين القوى العالمية</li>
+                            <li>ارتفاع مؤشرات البورصة المحلية بنسبة 3% في ختام جلسة اليوم</li>
+                            <li>الفريق الوطني يتأهل للدور النهائي بعد فوز ساحق في المباراة الأخيرة</li>
+                            <li>إطلاق مبادرة وطنية جديدة لدعم الثقافة والفنون في البلاد</li>
+                            <li>افتتاح معرض دولي للتكنولوجيا بمشاركة شركات عالمية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>أخبار السياسة</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item active">سياسة</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Featured News -->
+                    <div class="main-featured-news mb-4">
+                        <div class="featured-image">
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="اجتماع سياسي">
+                            <div class="featured-category">سياسة</div>
+                        </div>
+                        <div class="featured-content">
+                            <h2>اجتماع وزراء خارجية الدول الكبرى لمناقشة الأزمات الإقليمية</h2>
+                            <p>عقد وزراء خارجية الدول الكبرى اجتماعاً طارئاً لمناقشة الأزمات الإقليمية والتوترات المتصاعدة في المنطقة. وأكد المجتمعون على ضرورة تكثيف الجهود الدبلوماسية...</p>
+                            <div class="article-meta">
+                                <span><i class="far fa-clock"></i> قبل 3 ساعات</span>
+                                <span><i class="far fa-comment"></i> 24 تعليق</span>
+                                <span><i class="far fa-eye"></i> 2.3K مشاهدة</span>
+                            </div>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+
+                    <!-- Politics Articles -->
+                    <div class="articles-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/8944867/pexels-photo-8944867.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>مباحثات ثنائية بين وزيري خارجية البلدين لتعزيز العلاقات</h3>
+                                        <p>التقى وزيرا خارجية البلدين اليوم في العاصمة لبحث سبل تعزيز العلاقات الثنائية...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 5 ساعات</span>
+                                            <span><i class="far fa-comment"></i> 10 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/2295652/pexels-photo-2295652.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>انتخابات محلية في المحافظات الشمالية وسط إقبال كبير من الناخبين</h3>
+                                        <p>شهدت المحافظات الشمالية إقبالاً كبيراً من الناخبين على صناديق الاقتراع...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 6 ساعات</span>
+                                            <span><i class="far fa-comment"></i> 18 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/4427610/pexels-photo-4427610.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>مجلس الوزراء يقر حزمة من القرارات الإصلاحية الجديدة</h3>
+                                        <p>أقر مجلس الوزراء في اجتماعه الأسبوعي حزمة من القرارات الإصلاحية الجديدة...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 8 ساعات</span>
+                                            <span><i class="far fa-comment"></i> 15 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>زيارة رسمية للوفد البرلماني إلى عدة دول أوروبية</h3>
+                                        <p>يقوم وفد برلماني بزيارة رسمية إلى عدة دول أوروبية لبحث سبل تعزيز التعاون...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 10 ساعات</span>
+                                            <span><i class="far fa-comment"></i> 8 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/1440985/pexels-photo-1440985.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>مؤتمر دولي حول الحوكمة والشفافية بمشاركة خبراء دوليين</h3>
+                                        <p>ينطلق غداً المؤتمر الدولي حول الحوكمة والشفافية بمشاركة خبراء دوليين...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 12 ساعة</span>
+                                            <span><i class="far fa-comment"></i> 6 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.pexels.com/photos/3769901/pexels-photo-3769901.jpeg" alt="أخبار سياسية">
+                                    </div>
+                                    <div class="news-content">
+                                        <h3>تعيينات جديدة في المناصب القيادية بالوزارات الحكومية</h3>
+                                        <p>أعلنت الحكومة عن تعيينات جديدة في عدد من المناصب القيادية بالوزارات الحكومية...</p>
+                                        <div class="article-meta">
+                                            <span><i class="far fa-clock"></i> قبل 14 ساعة</span>
+                                            <span><i class="far fa-comment"></i> 11 تعليق</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center mt-4">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">السابق</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">التالي</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Most Read -->
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h3>الأكثر قراءة</h3>
+                        </div>
+                        <div class="most-read-list">
+                            <div class="most-read-item">
+                                <div class="item-number">1</div>
+                                <div class="item-content">
+                                    <h4>اجتماع وزراء خارجية الدول الكبرى لمناقشة الأزمات الإقليمية</h4>
+                                    <span><i class="far fa-clock"></i> قبل 3 ساعات</span>
+                                </div>
+                            </div>
+                            <div class="most-read-item">
+                                <div class="item-number">2</div>
+                                <div class="item-content">
+                                    <h4>انتخابات محلية في المحافظات الشمالية وسط إقبال كبير من الناخبين</h4>
+                                    <span><i class="far fa-clock"></i> قبل 6 ساعات</span>
+                                </div>
+                            </div>
+                            <div class="most-read-item">
+                                <div class="item-number">3</div>
+                                <div class="item-content">
+                                    <h4>مجلس الوزراء يقر حزمة من القرارات الإصلاحية الجديدة</h4>
+                                    <span><i class="far fa-clock"></i> قبل 8 ساعات</span>
+                                </div>
+                            </div>
+                            <div class="most-read-item">
+                                <div class="item-number">4</div>
+                                <div class="item-content">
+                                    <h4>تحليل: التحديات السياسية التي تواجه المنطقة في المرحلة القادمة</h4>
+                                    <span><i class="far fa-clock"></i> قبل يوم</span>
+                                </div>
+                            </div>
+                            <div class="most-read-item">
+                                <div class="item-number">5</div>
+                                <div class="item-content">
+                                    <h4>مباحثات ثنائية بين وزيري خارجية البلدين لتعزيز العلاقات</h4>
+                                    <span><i class="far fa-clock"></i> قبل 5 ساعات</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Analysis and Opinion -->
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h3>تحليلات وآراء</h3>
+                        </div>
+                        <div class="opinion-list">
+                            <div class="opinion-item">
+                                <div class="opinion-image">
+                                    <img src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg" alt="رأي سياسي">
+                                </div>
+                                <div class="opinion-content">
+                                    <h4>التحديات السياسية التي تواجه المنطقة في المرحلة القادمة</h4>
+                                    <p>بقلم: د. أحمد محمد</p>
+                                </div>
+                            </div>
+                            <div class="opinion-item">
+                                <div class="opinion-image">
+                                    <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" alt="رأي سياسي">
+                                </div>
+                                <div class="opinion-content">
+                                    <h4>مستقبل العلاقات الدولية في ظل المتغيرات العالمية</h4>
+                                    <p>بقلم: أ. سارة عبدالله</p>
+                                </div>
+                            </div>
+                            <div class="opinion-item">
+                                <div class="opinion-image">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg" alt="رأي سياسي">
+                                </div>
+                                <div class="opinion-content">
+                                    <h4>دور المؤسسات الدولية في حل النزاعات الإقليمية</h4>
+                                    <p>بقلم: د. خالد إبراهيم</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="sidebar-section">
+                        <div class="newsletter-sidebar">
+                            <h3>النشرة الإخبارية</h3>
+                            <p>اشترك للحصول على آخر الأخبار السياسية مباشرة إلى بريدك الإلكتروني</p>
+                            <form id="sidebar-newsletter-form">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">اشتراك</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <h2><span class="logo-star">★</span> نجم</h2>
+                            </div>
+                            <p>منصة إخبارية رائدة تقدم أحدث الأخبار والتحليلات في مختلف المجالات السياسية والاقتصادية والرياضية والثقافية.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-links">
+                            <h3>روابط سريعة</h3>
+                            <ul>
+                                <li><a href="../index.html">الرئيسية</a></li>
+                                <li><a href="politics.html">سياسة</a></li>
+                                <li><a href="economy.html">اقتصاد</a></li>
+                                <li><a href="sports.html">رياضة</a></li>
+                                <li><a href="culture.html">ثقافة</a></li>
+                                <li><a href="special-reports.html">تقارير خاصة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <h3>خدماتنا</h3>
+                            <ul>
+                                <li><a href="#">النشرة الإخبارية</a></li>
+                                <li><a href="#">الإشعارات المباشرة</a></li>
+                                <li><a href="#">الوسائط المتعددة</a></li>
+                                <li><a href="#">البث المباشر</a></li>
+                                <li><a href="#">الأرشيف</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-contact">
+                            <h3>اتصل بنا</h3>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> شارع الإعلام، المدينة الإعلامية</li>
+                                <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                                <li><i class="fas fa-envelope"></i> info@najm-news.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 نجم للأخبار. جميع الحقوق محفوظة.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="login-email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="login-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="login-password" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="login-password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label" for="remember-me">تذكرني</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">دخول</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">إنشاء حساب جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form">
+                        <div class="mb-3">
+                            <label for="register-name" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="register-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="register-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="register-password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-confirm-password" class="form-label">تأكيد كلمة المرور</label>
+                            <input type="password" class="form-control" id="register-confirm-password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree-terms" required>
+                            <label class="form-check-label" for="agree-terms">أوافق على شروط الاستخدام وسياسة الخصوصية</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">تسجيل</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="modal fade" id="searchResultsModal" tabindex="-1" aria-labelledby="searchResultsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchResultsModalLabel">نتائج البحث</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="search-results-container">
+                        <!-- Search results will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/breaking-news.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/notifications.js"></script>
+</body>
+</html>
